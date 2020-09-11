@@ -2,7 +2,7 @@
 #include <math.h>
 int light[16][16],test[16][16];
 int m,n,step=0,min=10000;
-void edit(int y,int x){
+void edit(int y,int x){//改变左、右、下方灯的状态
     test[y][x]=test[y][x]==1?0:1;
     if(x-1>=0){test[y][x-1]=test[y][x-1]==1?0:1;}
     if(x+1<m){test[y][x+1]=test[y][x+1]==1?0:1;}
@@ -25,7 +25,7 @@ int main(){
             }
         }
         for(int i=0;i<m;i++){
-            if(((init>>i)&1)==1){edit(0,i);}
+            if(((init>>i)&1)==1){edit(0,i);}//用二进制init表示对第一排灯的操作
         }
         for(int i=1;i<n;i++){
             for(int j=0;j<m;j++){
