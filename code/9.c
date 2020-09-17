@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-char L1[1000000],L2[1000];
-int get[1000000]={0};
+char L1[4000000],L2[10000];
+int get[2000000]={0};
 int main(){
     int i=0;
     while((L1[i]=getchar())!='\n'){i++;}
@@ -13,7 +13,7 @@ int main(){
     start:;
     while(L2[p2]!='\0'){
         while(1){
-            if(p1>init+i){
+            if(p1>=init+i){
                 p1=init+1;
                 p2=0;
                 init=2*i;
@@ -34,14 +34,14 @@ int main(){
         }
     }
     i=0;
-    for(;i<1000000;i++){
+    for(;i<2000000;i++){
         if(get[i]==1){
             printf("%d",i+1);
             i++;
             break;
         }
     }
-    for(;i<1000000;i++){
+    for(;i<2000000;i++){
         if(get[i]==1){
             printf(" %d",i+1);
         }
