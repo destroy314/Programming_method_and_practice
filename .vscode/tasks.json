@@ -34,6 +34,26 @@
                 "$gcc"
             ],
             "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "g++",
+            "command": "C:/Users/destroy314/AppData/Local/Programs/C/mingw64/bin/g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "C:/Users/destroy314/Documents/GitHub/Programming_method_and_practice/exe/${fileBasenameNoExtension}.exe",
+                "-finput-charset=UTF-8",
+                "-fexec-charset=GBK"
+            ],
+            "options": {
+                "cwd": "C:/Users/destroy314/AppData/Local/Programs/C/mingw64/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
         }
     ]
 }
