@@ -9,6 +9,14 @@
         "string_view": "c",
         "initializer_list": "c",
         "cmath": "c",
-        "queue": "cpp"
-    }
+        "queue": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "optional": "cpp",
+        "istream": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
